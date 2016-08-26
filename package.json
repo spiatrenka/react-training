@@ -1,22 +1,31 @@
 {
-  "name": "react",
+  "name": "react-training",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "ava 'app/**/*.test.js' --verbose --require ./other/setup-ava-tests.js"
+    "production": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spiatrenka/react-training.git"
   },
   "author": "Sergey Petrenko <spiatrenka@scnsoft.com> (https://scnsoft.com)",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spiatrenka/react-training/issues"
+  },
+  "homepage": "https://github.com/spiatrenka/react-training#readme",
   "dependencies": {
-    "jquery": "^3.1.0"
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
   },
   "devDependencies": {
     "babel-core": "^6.14.0",
     "babel-loader": "^6.2.5",
     "babel-preset-react": "^6.11.1",
-    "coffee-loader": "^0.7.2",
     "html-webpack-plugin": "^2.22.0",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0"
   }
 }
